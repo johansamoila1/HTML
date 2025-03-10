@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
-    <title>Lomaketehtävä</title>
+    <title>FormExcersice</title>
 </head>
 
 <body>
+    <form>
+        <Fieldset>
+            <legend>Contact information:</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First name:</label></td>
+                    <td><input type="text" name="" id=""><label for="Pref"> Preferred contact method:</label></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last name:</label></td>
+                    <td><input type="text" name="" id=""><input type="checkbox" name="" id=""><label
+                            for="tele">Email</label></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</td>
+                    <td><input type="text" name="" id=""></label><input type="checkbox" name="" id="">
+                        <labelfor="tele">Telephone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tele">Telephone:</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+            </table>
+        </Fieldset>
+        <Fieldset>
+            <legend>Feedback:</legend>
+            <table>
+                <tr>
+                    <td><label for="Message">Message subject:</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><textarea si="" id=""></textarea>
+                </tr>
+                <tr>
+                    <td><label for="attack">Attach a file:</label></td>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
 
-    <h1></h1>
-    <p></p>
 
+
+
+    </form>
 </body>
-
-<form action="/fromhere-php">
-    <Fieldset>
-        <legend>Contact information:</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" name="" id=""><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" name="" id=""><br>
-    </Fieldset>
-    </legend>
-    <Fieldset>
-        <legend>Feedback:</legend>
-        <label for="subj">Message subject</label><br>
-        <textarea name="messagefield" rows="5" cols="40"></textarea>
-    </Fieldset>
-    <label for="file">Attach a file:</label>
-    <input type="submit" value="Send">
-</form>
 
 </html>
