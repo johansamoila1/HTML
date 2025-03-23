@@ -1,0 +1,92 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    height: 95vh;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, h3, p, li {
+    font-weight: bold ;
+    color: rgb(33, 88, 120);
+
+}
+
+fieldset{
+    border-radius: 20px;
+    border-color: rgb(47, 137, 193);
+}
+    
+legend{
+    font-size: medium;
+    color: rgb(47, 137, 193);
+
+}
+
+.taulukko1 {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rivi {
+    display: table-row;
+}
+
+.vasen {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid;
+}
+
+.otsikko {
+    font-weight: bold;
+    background-color: rgb(147, 182, 203);
+}
+
+.ala {
+    font-weight: bold;
+    background-color: rgb(147, 182, 203);
+}
+
+.kesk {
+    display: table-cell;
+    text-align: center;
+    border: 1px solid;
+}
+
+.kesk-piste {
+    display: table-cell;
+    font-weight: bold;
+    background-color: rgb(147, 182, 203);
+    text-align: center;
+    border: 1px solid;
+}
+
+.form label{
+    font-weight: bold;
+
+}
+
+.form label[for="emmail"]{
+    margin-left: -50px;
+}
+
+.form input[type="checkbox"]{
+    margin-left: -50px;
+}
+
+.form input[type="submit"]{
+    background-color: rgb(146, 246, 161);
+    border-radius: 10px;
+}
+
+.form input[type="file"] {
+    color: rgb(157, 47, 47);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+}
