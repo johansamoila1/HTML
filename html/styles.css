@@ -13,6 +13,7 @@ body {
     max-width: 800px;
     padding: 20px;
     box-sizing: border-box;
+    padding-top: 70px;
 }
 
 h1, h3, p, li {
@@ -22,13 +23,13 @@ h1, h3, p, li {
 }
 
 h1 {
-    font-style: oblique;
+    font-style: arial;
     text-align: center;
 }
 
 fieldset {
     border-radius: 20px;
-    border-color: #2c3e50;
+    border: 2px solid #2c3e50;
     width: 100%;
     margin: 10px 0;
 }
@@ -42,6 +43,7 @@ img {
     width: 400px;
     height: 200px;
     margin: 0 auto;
+    display: block;
 }
 
 .taulukko1 {
@@ -97,7 +99,7 @@ a:hover {
     text-decoration: underline;
 }
 
-ul {
+ul, ol {
     list-style-type: decimal;
     padding-left: 40px;
     width: 100%;
@@ -108,18 +110,30 @@ li {
     margin-bottom: 5px;
 }
 
-@media (max-width: 850px) {
-    body {
-        position: static;
-        transform: none;
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 10px;
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-        max-width: 400px;
-    }
+
+.navbar-custom {
+    background-color: #bcc9d6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav-link:hover {
+    color: #dcdcdc !important;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
 }
