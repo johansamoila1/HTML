@@ -1,35 +1,54 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: auto;
     height: 95vh;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1, h3, p, li {
-    font-weight: bold ;
+    font-weight: bold;
     color: rgb(33, 88, 120);
-
+    width: 100%;
 }
 
-fieldset{
+h1 {
+    font-style: oblique;
+    text-align: center;
+}
+
+fieldset {
     border-radius: 20px;
-    border-color: rgb(47, 137, 193);
+    border-color: #2c3e50;
+    width: 100%;
+    margin: 10px 0;
 }
-    
-legend{
-    font-size: medium;
-    color: rgb(47, 137, 193);
 
+legend {
+    font-size: medium;
+    color: #2c3e50;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .taulukko1 {
     display: table;
     width: 100%;
     border-collapse: collapse;
+    margin: 15px 0;
 }
 
 .rivi {
@@ -44,12 +63,12 @@ legend{
 
 .otsikko {
     font-weight: bold;
-    background-color: rgb(147, 182, 203);
+    background-color: #bcc9d6;
 }
 
 .ala {
     font-weight: bold;
-    background-color: rgb(147, 182, 203);
+    background-color: #bcc9d6;
 }
 
 .kesk {
@@ -61,32 +80,46 @@ legend{
 .kesk-piste {
     display: table-cell;
     font-weight: bold;
-    background-color: rgb(147, 182, 203);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border: 1px solid;
 }
 
-.form label{
+a {
+    color: rgb(33, 88, 120);
     font-weight: bold;
-
+    text-decoration: none;
+    align-self: flex-start;
+    margin: 10px 0;
 }
 
-.form label[for="emmail"]{
-    margin-left: -50px;
+a:hover {
+    text-decoration: underline;
 }
 
-.form input[type="checkbox"]{
-    margin-left: -50px;
+ul {
+    list-style-type: decimal;
+    padding-left: 40px;
+    width: 100%;
+    margin: 10px 0;
 }
 
-.form input[type="submit"]{
-    background-color: rgb(146, 246, 161);
-    border-radius: 10px;
+li {
+    margin-bottom: 5px;
 }
 
-.form input[type="file"] {
-    color: rgb(157, 47, 47);
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
+@media (max-width: 850px) {
+    body {
+        position: static;
+        transform: none;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
 }
